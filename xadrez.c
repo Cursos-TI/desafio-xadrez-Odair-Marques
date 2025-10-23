@@ -8,6 +8,7 @@ int main() {
     int idx_Torre;//Indice da Torre.
     int idx_Bispo = 0;//Indice do Bispo.
     int idx_Rainha = 0;//Indice da Rainha.
+    int idx_Cavalo = 0; //Indice do Cavalo.
 
     //Mover a Torra.
     printf("Movendo a Torre: \n");
@@ -59,6 +60,36 @@ int main() {
    printf("-------------------------\n");// Traçar uma linha.
 
    printf("\n"); //Pular uma linha.
+
+   printf("Movendo o Cavalo: \n");
+
+   printf("--------------------------\n");//Traçar uma linha.
+
+   
+   do //Loop "do While" executa a ação uma vêz antes de testar, então começar por este.
+   {
+        //Executar o "for" com "idx_Cavalo" iniciando com 0 até 1.
+        for(idx_Cavalo = 0; idx_Cavalo <= 1; idx_Cavalo++){
+            printf("Baixo. \n");//Direção do movimento.
+        }
+
+        printf("Esquerda. \n");//Direção do movimento..
+    
+
+   } while (idx_Cavalo < 1);//idx_Cavalo sai do "for" com valor == 1, condição falsa, sai do loop.
+
+   printf("----------------------------------- \n"); //Traçar uma linha.
+   printf("\n"); //Pular uma linha.
+
+
+
+
+
+
+
+
+
+
 
 
     return 0;
