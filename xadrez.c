@@ -1,32 +1,65 @@
 #include <stdio.h>
 
-// Desafio de Xadrez - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de movimentação das peças de xadrez.
-// O objetivo é utilizar estruturas de repetição e funções para determinar os limites de movimentação dentro do jogo.
-
 int main() {
-    // Nível Novato - Movimentação das Peças
-    // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
 
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
 
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
+    //Declarar as variveis
 
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
+    int idx_Torre;//Indice da Torre.
+    int idx_Bispo = 0;//Indice do Bispo.
+    int idx_Rainha = 0;//Indice da Rainha.
 
-    // Nível Aventureiro - Movimentação do Cavalo
-    // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
-    // Um loop pode representar a movimentação horizontal e outro vertical.
+    //Mover a Torra.
+    printf("Movendo a Torre: \n");
 
-    // Nível Mestre - Funções Recursivas e Loops Aninhados
-    // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    // Exemplo: Crie uma função recursiva para o movimento do Bispo.
+    printf("-------------------------\n");
+        for(idx_Torre = 1; idx_Torre <=5; idx_Torre++){
+           printf("Direita. \n"); //Direçao do movimento da torre.
+        }
 
-    // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
-    // Inclua o uso de continue e break dentro dos loops.
+    printf("-------------------------\n");//Traçar uma linha.
+        printf("\n"); //Pular uma linha.
+
+
+    //Mover o Bispo.
+    printf("Movendo o Bispo: \n");
+
+    printf("-------------------------\n");//Traçar uma linha.
+
+        while (idx_Bispo < 5){
+
+            printf("Cima, Direita. \n");//Direção do movimento
+            
+            
+            idx_Bispo++;//incremento
+
+        }
+      
+    printf("-------------------------\n"); //Traçar uma linha.
+
+    printf("\n"); //Pular uma linha.
+
+   
+   
+    //Mover a Rainha.
+
+   printf("Movendo a Rainha: \n");
+
+   printf("-------------------------\n");//Traçar uma linha.
+
+   do
+   {
+    
+        printf("Esquerda. \n");//Pular uma linha.
+
+        idx_Rainha++;//Incremento.
+
+   } while (idx_Rainha <8);
+
+   printf("-------------------------\n");// Traçar uma linha.
+
+   printf("\n"); //Pular uma linha.
+
 
     return 0;
 }
